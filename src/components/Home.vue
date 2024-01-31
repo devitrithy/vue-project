@@ -3,11 +3,13 @@ import Person from "./icons/Person.vue";
 </script>
 <template>
   <main class="flex justify-evenly items-center">
-    <div>
+    <div class="target" v-motion-slide-visible-left v-motion-slide-left>
       <h1 class="text-6xl capitalize align-middle">
         Hello, I'm
         <span class="gradiant text-transparent bg-clip-text">Rithy Devit</span>
-        <div class="mt-5">I'm a Full-Stack Developer</div>
+        <div class="mt-5">
+          I'm <span class="lowercase">a</span> Full-Stack Developer
+        </div>
       </h1>
       <div>
         <blockquote class="text-xl italic font-semibold text-gray-500">
@@ -22,7 +24,7 @@ import Person from "./icons/Person.vue";
         <v-icon name="fa-external-link-alt" /> Hire Me
       </button>
     </div>
-    <div class="w-4/6">
+    <div class="target w-4/6" v-motion-slide-visible-right v-motion-slide-right>
       <Person />
     </div>
   </main>
