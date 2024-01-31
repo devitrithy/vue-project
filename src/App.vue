@@ -1,24 +1,14 @@
 <script setup lang="ts">
 import Navbar from "./components/Navbar.vue";
-function scrollToSection(target: any) {
-  const targetElement = document.querySelector(target);
-  if (targetElement) {
-    window.scrollTo({
-      top: targetElement.offsetTop,
-      behavior: "smooth",
-    });
-  }
-}
-function getRandomInt(min: number, max: number) {
-  min = Math.ceil(min);
-  max = Math.floor(max);
-  return Math.floor(Math.random() * (max - min + 1)) + min;
-}
+import Home from "./components/Home.vue";
+import Skill from "./components/Navbar.vue";
+import About from "./components/Navbar.vue";
+import Project from "./components/Navbar.vue";
 </script>
 
 <template>
   <Navbar />
-  <section id="home" class="h-screen pt-[80px]">HOME</section>
+  <section id="home" class="h-screen pt-[80px]"><Home /></section>
   <section id="skill" class="h-screen pt-[80px]">SKILL</section>
   <section id="project" class="h-screen pt-[80px]">Project</section>
   <section id="aboutme" class="h-screen pt-[80px]">About Me</section>
