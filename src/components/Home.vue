@@ -3,7 +3,7 @@ import Person from "./icons/Person.vue";
 </script>
 <template>
   <main class="flex justify-evenly items-center">
-    <div class="target" v-motion-slide-visible-left v-motion-slide-left>
+    <div class="target" v-motion-slide-left>
       <h1 class="text-6xl capitalize align-middle">
         Hello, I'm
         <span class="gradiant text-transparent bg-clip-text">Rithy Devit</span>
@@ -24,7 +24,7 @@ import Person from "./icons/Person.vue";
         <v-icon name="fa-external-link-alt" /> Hire Me
       </button>
     </div>
-    <div class="target w-4/6" v-motion-slide-visible-right v-motion-slide-right>
+    <div class="target w-4/6" v-motion-slide-right>
       <Person />
     </div>
   </main>

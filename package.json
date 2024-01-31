@@ -13,8 +13,7 @@
   "dependencies": {
     "@vueuse/motion": "^2.0.0",
     "oh-vue-icons": "1.0.0-rc3",
-    "vue": "^3.4.15",
-    "vue-scrollto": "^2.20.0"
+    "vue": "^3.4.15"
   },
   "devDependencies": {
     "@tsconfig/node20": "^20.1.2",

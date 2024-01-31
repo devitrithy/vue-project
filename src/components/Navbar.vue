@@ -8,7 +8,7 @@ function activeNavItem(value: string) {
 </script>
 <template>
   <nav
-    class="nav h-[60px] text-white flex justify-between items-center px-[100px] fixed w-screen border-b border-gray-800"
+    class="nav h-[60px] text-white flex justify-between items-center px-[100px] fixed w-screen border-b border-gray-800 z-10"
   >
     <a href="#home"
       ><h1 class="text-2xl gradiant text-transparent bg-clip-text">
