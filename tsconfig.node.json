@@ -7,18 +7,13 @@
     "nightwatch.conf.*",
     "playwright.config.*"
   ],
-
   "compilerOptions": {
-    "target": "esnext",
-    "module": "esnext",
-    "lib": ["dom", "esnext"],
-    "strict": true,
-    "noImplicitAny": false,
-    "esModuleInterop": true,
-    "skipLibCheck": true,
-    "incremental": true,
-    "moduleResolution": "node",
-    "forceConsistentCasingInFileNames": true
-  },
-  "exclude": ["node_modules", "dist"]
+    "composite": true,
+    "noEmit": true,
+    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.node.tsbuildinfo",
+
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "types": ["node"]
+  }
 }
