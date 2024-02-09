@@ -6,11 +6,8 @@ import Info from "./shared/Info.vue";
   <main class="container flex flex-col justify-between px-5">
     <Heading title="About Me" />
     <div
-      class="flex flex-col lg:flex-row gap-10 justify-evenly items-center py-20"
+      class="flex flex-col-reverse lg:flex-row gap-10 justify-evenly items-center py-20"
     >
-      <div class="overflow-hidden rounded-full border-4 border-primary">
-        <img src="../assets/me.jpg" alt="" width="352" />
-      </div>
       <div class="block min-w-[300px] max-w-[700px]">
         <h1 class="text-primary text-2xl uppercase font-bold">
           Full-Stack Developer
@@ -26,6 +23,11 @@ import Info from "./shared/Info.vue";
         <Info title="email" text="devitrithy1@gmail.com" />
         <Info title="address" text="Ta Khmau, Kandal Cambodia" />
         <Info title="language" text="Khmer, English" />
+      </div>
+      <div
+        class="overflow-hidden rounded-xl border-primary shadow-border border-4"
+      >
+        <img src="../assets/me.jpg" alt="" width="352" />
       </div>
     </div>
     <div></div>

@@ -3,7 +3,7 @@ let title = "{{ devitRithy }}";
 </script>
 <template>
   <header
-    class="flex items-center justify-center border-b border-b-primary border-opacity-20 w-screen fixed nav"
+    class="flex items-center justify-center border-b border-b-primary border-opacity-20 w-screen fixed nav z-50"
   >
     <nav
       class="flex justify-between items-center p-[15px] bg-transparent text-text container"

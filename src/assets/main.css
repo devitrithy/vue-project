@@ -27,3 +27,8 @@ section {
   border-radius: 10px;
   @apply bg-primary;
 }
+
+.shadow-border {
+  box-shadow: rgba(6, 121, 198, 0.2) 0px 2px 100px;
+  @apply border-primary border-4;
+}
