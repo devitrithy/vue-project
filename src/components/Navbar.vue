@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import Contact from "./shared/Contact.vue";
-import { ref } from "vue";
+import { ref, type Ref } from "vue";
 let title = "{{ devitRithy }}";
-let show = ref(false);
+let show: Ref<boolean> = ref(false);
 </script>
 <template>
   <header
@@ -44,14 +44,20 @@ let show = ref(false);
     <ul
       class="uppercase flex flex-col gap-5 px-5 py-1 items-center text-opacity-50 text-text mt-20 w-full"
     >
-      <li class="nav-item hidden-nav">
-        <a href="#home">Home</a>
+      <li class="item-width">
+        <a class="nav-item hidden-nav" href="#home">Home</a>
       </li>
-      <li class="nav-item hidden-nav"><a href="#about_me">about me</a></li>
-      <li class="nav-item hidden-nav"><a href="#education">education</a></li>
-      <li class="nav-item hidden-nav"><a href="#skills">skills</a></li>
-      <li class="nav-item hidden-nav">
-        <a href="#experiences">experiences</a>
+      <li class="item-width">
+        <a class="nav-item hidden-nav" href="#about_me">about me</a>
+      </li>
+      <li class="item-width">
+        <a class="nav-item hidden-nav" href="#education">education</a>
+      </li>
+      <li class="item-width">
+        <a class="nav-item hidden-nav" href="#skills">skills</a>
+      </li>
+      <li class="item-width">
+        <a class="nav-item hidden-nav" href="#experiences">experiences</a>
       </li>
     </ul>
     <div class="flex items-center w-full justify-center gap-1">
@@ -73,9 +79,13 @@ let show = ref(false);
   backdrop-filter: blur(17.8px);
   -webkit-backdrop-filter: blur(17.8px);
 }
-.hidden-nav {
-  @apply bg-primary/20 border border-primary rounded-full min-w-52 max-w-96 w-full h-10 flex items-center justify-center;
+.item-width {
+  @apply min-w-52 max-w-96 w-full;
 }
+.hidden-nav {
+  @apply bg-primary/20 border border-primary rounded-full h-10 flex items-center justify-center item-width;
+}
+
 .nav-item {
   @apply hover:text-primary;
 }
