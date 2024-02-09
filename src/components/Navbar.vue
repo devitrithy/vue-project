@@ -1,49 +1,49 @@
 <script setup lang="ts">
-import { ref } from "vue";
-
-let active = ref("home");
-function activeNavItem(value: string) {
-  active.value = value;
-}
 let title = "{{ devitRithy }}";
 </script>
 <template>
   <header
-    class="nav h-[60px] flex justify-center items-center fixed text-white w-screen border-b border-gray-800 z-10"
+    class="flex items-center justify-center border-b border-b-primary border-opacity-20 w-screen fixed nav"
   >
-    <nav class="h-full flex justify-between items-center container">
-      <a href="#home"
-        ><h1
-          class="text-2xl gradiant text-transparent bg-clip-text font-extrabold"
-        >
-          {{ title }}
-        </h1></a
+    <nav
+      class="flex justify-between items-center p-[15px] bg-transparent text-text container"
+    >
+      <a href="#home" class="text-primary text-2xl font-extrabold">{{
+        title
+      }}</a>
+      <ul
+        class="uppercase flex gap-5 px-5 py-1 bg-primary bg-opacity-20 rounded-full items-center border-primary border text-opacity-50 text-text"
       >
-      <ul class="flex gap-10 items-center">
+        <li class="nav-item"><a href="#home">Home</a></li>
+        <li class="nav-item"><a href="#about_me">about me</a></li>
+        <li class="nav-item"><a href="#education">education</a></li>
+        <li class="nav-item"><a href="#skills">skills</a></li>
+        <li class="nav-item"><a href="#experiences">experiences</a></li>
+      </ul>
+      <ul class="flex items-center gap-3">
         <li>
-          <a href="#home" class="nav-item" @click="activeNavItem('home')"
-            >Home</a
-          >
+          <a
+            href="http://facebook.com/devitrithy1"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><v-icon name="fa-facebook" class="text-primary" scale="1.5"
+          /></a>
         </li>
         <li>
-          <a href="#skill" class="nav-item" @click="activeNavItem('skill')"
-            >Skill</a
-          >
+          <a
+            href="http://t.me/devitrithy"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><v-icon name="fa-telegram" class="text-primary" scale="1.5"
+          /></a>
         </li>
         <li>
-          <a href="#project" class="nav-item" @click="activeNavItem('project')"
-            >Project</a
-          >
-        </li>
-        <li>
-          <a href="#aboutme" class="nav-item" @click="activeNavItem('aboutme')"
-            >About Me</a
-          >
-        </li>
-        <li>
-          <button class="px-10 py-2 gradiant text-black rounded duration-300">
-            Contact Me
-          </button>
+          <a
+            href="http://github.com/devitrithy"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><v-icon name="fa-github" class="text-primary" scale="1.5"
+          /></a>
         </li>
       </ul>
     </nav>
@@ -51,20 +51,14 @@ let title = "{{ devitRithy }}";
 </template>
 
 <style>
-.nav-item {
-  @apply hover:text-blue-400 text-gray-400;
-}
-.gradiant {
-  @apply hover:bg-gradient-to-l bg-gradient-to-r from-cyan-400 to-blue-400;
-}
-.active {
-  @apply text-blue-400;
-}
 .nav {
   /* From https://css.glass */
-  background-color: rgba(3, 7, 17, 0.829);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.8);
-  backdrop-filter: blur(5.2px);
-  -webkit-backdrop-filter: blur(52.3px);
+  background: rgba(10, 10, 10, 0.65);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(17.8px);
+  -webkit-backdrop-filter: blur(17.8px);
+}
+.nav-item {
+  @apply hover:text-primary;
 }
 </style>

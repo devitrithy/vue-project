@@ -10,5 +10,5 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  @apply bg-gray-950 text-white;
+  @apply bg-background text-text;
 }
