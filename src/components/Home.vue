@@ -3,7 +3,7 @@ import Person from "./icons/Person.vue";
 </script>
 <template>
   <main
-    class="container flex md:flex-row flex-col justify-between items-center px-5"
+    class="container flex md:flex-row flex-col-reverse justify-between items-center px-5 gap-10"
   >
     <div
       class="2xl:text-6xl xl:text-5xl lg:text-5xl md:text-3xl text-4xl font-bold md:block flex justify-center items-center flex-col md:w-1/2"
@@ -21,7 +21,7 @@ import Person from "./icons/Person.vue";
       </a>
     </div>
     <Person
-      class="md:block hidden xl:w-[785px] xl:h-[572px] lg:w-[585px] lg:h-[372px] md:w-[485px] md:h-[272px]"
+      class="xl:w-[785px] xl:h-[572px] lg:w-[585px] lg:h-[372px] md:w-[485px] md:h-[272px] w-[400px] h-[200px]"
     />
   </main>
 </template>
