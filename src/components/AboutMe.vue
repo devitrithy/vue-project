@@ -34,7 +34,7 @@ import Hobbie from "./shared/Hobbie.vue";
     <div class="flex justify-center items-center">
       <div class="flex flex-col items-center gap-10">
         <h1 class="uppercase text-primary font-bold text-2xl">interest</h1>
-        <div class="flex gap-5">
+        <div class="flex gap-5 flex-wrap justify-center">
           <!--  -->
           <Hobbie>
             <v-icon
