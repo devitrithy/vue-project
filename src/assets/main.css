@@ -5,10 +5,30 @@
 html {
   scroll-behavior: smooth;
   font-family: "Roboto", sans-serif, serif;
+  scrollbar-color: #54cafa #181818;
 }
 section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  @apply bg-background text-text;
+  @apply flex justify-center items-center bg-background text-text;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: #181818;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px rgb(36, 36, 36);
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  @apply bg-primary;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-primary;
 }
