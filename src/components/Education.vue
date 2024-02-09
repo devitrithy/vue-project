@@ -32,7 +32,9 @@ import Graduate from "./icons/Graduate.vue";
             <Graduation />
           </div>
           <div class="flex flex-col gap-4">
-            <h1 class="uppercase text-xl font-bold">setec institute</h1>
+            <h1 class="uppercase text-lg md:text-xl font-bold">
+              setec institute
+            </h1>
             <h1 class="font-thin text-sm">
               Bachelor of Management Information System
             </h1>
@@ -44,7 +46,9 @@ import Graduate from "./icons/Graduate.vue";
             <Graduate />
           </div>
           <div class="flex flex-col gap-4">
-            <h1 class="uppercase text-xl font-bold">setec institute</h1>
+            <h1 class="uppercase text-lg md:text-xl font-bold">
+              setec institute
+            </h1>
             <h1 class="font-thin text-sm">
               Associate of Management Information System
             </h1>
@@ -56,7 +60,7 @@ import Graduate from "./icons/Graduate.vue";
             <Graduate />
           </div>
           <div class="flex flex-col gap-4">
-            <h1 class="uppercase text-xl font-bold">
+            <h1 class="uppercase text-lg md:text-xl font-bold">
               hun sen serey pheap highschool
             </h1>
             <h1 class="font-thin text-sm">Graduated</h1>
