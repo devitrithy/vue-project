@@ -12,7 +12,7 @@ let title = "{{ devitRithy }}";
         title
       }}</a>
       <ul
-        class="uppercase flex gap-5 px-5 py-1 bg-primary bg-opacity-20 rounded-full items-center border-primary border text-opacity-50 text-text"
+        class="uppercase lg:flex gap-5 px-5 py-1 bg-primary bg-opacity-20 rounded-full items-center border-primary border text-opacity-50 text-text md:hidden hidden"
       >
         <li class="nav-item"><a href="#home">Home</a></li>
         <li class="nav-item"><a href="#about_me">about me</a></li>
