@@ -13,7 +13,7 @@ import Person from "./icons/Person.vue";
       <h1 class="text-primary mb-5">Full-Stack Developer</h1>
       <a
         target="_blank"
-        href="https://rithy-devit.tiiny.site"
+        href="https://smallpdf.com/file#s=cdcc221f-9d48-4d0d-9032-d611aed5bc3e"
         class="text-xl font-bold py-2 px-10 bg-primary text-black rounded-full"
       >
         <v-icon class="mr-4" name="bi-cloud-download" scale="1.5" />

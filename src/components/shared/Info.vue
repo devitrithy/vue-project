@@ -6,7 +6,7 @@ defineProps({
 </script>
 <template>
   <h1 class="text-lg flex gap-5 mb-2">
-    <span class="font-bold text-primary uppercase w-1/5">{{ title }} </span>:
-    <span> {{ text }}</span>
+    <span class="font-bold text-primary uppercase w-1/5">{{ title }}</span
+    >:<span> {{ text }}</span>
   </h1>
 </template>
