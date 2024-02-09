@@ -45,6 +45,11 @@ let title = "{{ devitRithy }}";
             ><v-icon name="fa-github" class="text-primary" scale="1.5"
           /></a>
         </li>
+        <li>
+          <a href="tel:+855884124798"
+            ><v-icon name="fa-phone" class="text-primary" scale="1.5"
+          /></a>
+        </li>
       </ul>
     </nav>
   </header>
