@@ -27,8 +27,3 @@ section {
   border-radius: 10px;
   @apply bg-primary;
 }
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  @apply bg-primary;
-}

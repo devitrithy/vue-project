@@ -6,7 +6,7 @@ import Person from "./icons/Person.vue";
     class="container flex md:flex-row flex-col justify-between items-center px-5"
   >
     <div
-      class="2xl:text-6xl xl:text-5xl lg:text-5xl md:text-3xl text-4xl font-bold md:block flex justify-center items-center flex-col md:w-1/2 w-full"
+      class="2xl:text-6xl xl:text-5xl lg:text-5xl md:text-3xl text-4xl font-bold md:block flex justify-center items-center flex-col md:w-1/2"
     >
       <h1 class="mb-5">Hello</h1>
       <h1 class="mb-5">I'm Rithy Devit,</h1>
