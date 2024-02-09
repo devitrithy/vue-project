@@ -22,7 +22,7 @@
   </li>
   <li>
     <a href="tel:+855884124798"
-      ><v-icon name="fa-phone" class="text-primary" scale="1.5"
+      ><v-icon name="bi-telephone-fill" class="text-primary" scale="1.5"
     /></a>
   </li>
 </template>
