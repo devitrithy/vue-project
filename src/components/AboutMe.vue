@@ -13,7 +13,7 @@ import Hobbie from "./shared/Hobbie.vue";
         <h1
           class="text-primary text-2xl uppercase font-bold"
           data-aos="fade-right"
-          data-aos-duration="300"
+          data-aos-duration="500"
           data-aos-anchor-placement="top-bottom"
           data-aos-once="false"
         >
@@ -23,7 +23,7 @@ import Hobbie from "./shared/Hobbie.vue";
         <p
           class="font-light"
           data-aos="fade-right"
-          data-aos-duration="400"
+          data-aos-duration="600"
           data-aos-anchor-placement="top-bottom"
           data-aos-once="false"
         >
@@ -31,19 +31,19 @@ import Hobbie from "./shared/Hobbie.vue";
           and orderly person. I am looking forward for my first work experience.
         </p>
         <br />
-        <Info title="fullname" text="Rithy Devit" animate-duration="500" />
-        <Info title="phone" text="+855 88 412 4798" animate-duration="600" />
+        <Info title="fullname" text="Rithy Devit" animate-duration="700" />
+        <Info title="phone" text="+855 88 412 4798" animate-duration="800" />
         <Info
           title="email"
           text="devitrithy1@gmail.com"
-          animate-duration="700"
+          animate-duration="900"
         />
         <Info
           title="address"
           text="Ta Khmau, Kandal Cambodia"
-          animate-duration="800"
+          animate-duration="1000"
         />
-        <Info title="language" text="Khmer, English" animate-duration="900" />
+        <Info title="language" text="Khmer, English" animate-duration="1100" />
       </div>
       <div
         class="overflow-hidden rounded-xl border-primary shadow-border border-4"
@@ -60,12 +60,12 @@ import Hobbie from "./shared/Hobbie.vue";
         <h1 class="uppercase text-primary font-bold text-2xl">interest</h1>
         <div class="flex gap-5 flex-wrap justify-center">
           <!--  -->
-          <Hobbie duration="300" icon="bi-music-note"> </Hobbie>
-          <Hobbie duration="400" icon="bi-code-slash"> </Hobbie>
-          <Hobbie duration="500" icon="bi-search-heart"> </Hobbie>
-          <Hobbie duration="600" icon="gi-shuttlecock"> </Hobbie>
-          <Hobbie duration="700" icon="la-youtube"> </Hobbie>
-          <Hobbie duration="800" icon="ai-ideas-repec"> </Hobbie>
+          <Hobbie duration="500" icon="bi-music-note"> </Hobbie>
+          <Hobbie duration="600" icon="bi-code-slash"> </Hobbie>
+          <Hobbie duration="700" icon="bi-search-heart"> </Hobbie>
+          <Hobbie duration="800" icon="gi-shuttlecock"> </Hobbie>
+          <Hobbie duration="900" icon="la-youtube"> </Hobbie>
+          <Hobbie duration="1000" icon="ai-ideas-repec"> </Hobbie>
         </div>
       </div>
     </div>

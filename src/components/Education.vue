@@ -42,7 +42,7 @@ import Graduate from "./icons/Graduate.vue";
         <div
           class="box-item"
           data-aos="fade-right"
-          data-aos-duration="400"
+          data-aos-duration="500"
           data-aos-anchor-placement="top-bottom"
           data-aos-once="false"
         >
@@ -62,7 +62,7 @@ import Graduate from "./icons/Graduate.vue";
         <div
           class="box-item"
           data-aos="fade-right"
-          data-aos-duration="500"
+          data-aos-duration="600"
           data-aos-anchor-placement="top-bottom"
           data-aos-once="false"
         >
@@ -82,7 +82,7 @@ import Graduate from "./icons/Graduate.vue";
         <div
           class="box-item"
           data-aos="fade-right"
-          data-aos-duration="600"
+          data-aos-duration="700"
           data-aos-anchor-placement="top-bottom"
           data-aos-once="false"
         >
