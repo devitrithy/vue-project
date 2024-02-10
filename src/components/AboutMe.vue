@@ -9,7 +9,11 @@ import Hobbie from "./shared/Hobbie.vue";
     <div
       class="flex flex-col-reverse lg:flex-row gap-10 justify-evenly items-center py-20"
     >
-      <div class="block min-w-[300px] max-w-[700px]">
+      <div
+        class="block min-w-[300px] max-w-[700px]"
+        data-aos="fade-right"
+        data-aos-anchor-placement="bottom-bottom"
+      >
         <h1 class="text-primary text-2xl uppercase font-bold">
           Full-Stack Developer
         </h1>
@@ -27,6 +31,9 @@ import Hobbie from "./shared/Hobbie.vue";
       </div>
       <div
         class="overflow-hidden rounded-xl border-primary shadow-border border-4"
+        data-aos="fade-left"
+        data-aos-duration="500"
+        data-aos-anchor-placement="bottom-bottom"
       >
         <img src="../assets/me.jpg" alt="" width="352" />
       </div>

@@ -11,6 +11,7 @@
     "type-check": "vue-tsc --build --force"
   },
   "dependencies": {
+    "aos": "^2.3.4",
     "oh-vue-icons": "1.0.0-rc3",
     "vue": "^3.4.15"
   },
