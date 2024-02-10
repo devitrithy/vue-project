@@ -15,7 +15,7 @@ import Hobbie from "./shared/Hobbie.vue";
           data-aos="fade-right"
           data-aos-duration="300"
           data-aos-anchor-placement="top-bottom"
-          data-aos-once="true"
+          data-aos-once="false"
         >
           Full-Stack Developer
         </h1>
@@ -25,24 +25,32 @@ import Hobbie from "./shared/Hobbie.vue";
           data-aos="fade-right"
           data-aos-duration="400"
           data-aos-anchor-placement="top-bottom"
-          data-aos-once="true"
+          data-aos-once="false"
         >
           Management Information System student. I consider myself a responsible
           and orderly person. I am looking forward for my first work experience.
         </p>
         <br />
-        <Info title="fullname" text="Rithy Devit" />
-        <Info title="phone" text="+855 88 412 4798" />
-        <Info title="email" text="devitrithy1@gmail.com" />
-        <Info title="address" text="Ta Khmau, Kandal Cambodia" />
-        <Info title="language" text="Khmer, English" />
+        <Info title="fullname" text="Rithy Devit" animate-duration="500" />
+        <Info title="phone" text="+855 88 412 4798" animate-duration="600" />
+        <Info
+          title="email"
+          text="devitrithy1@gmail.com"
+          animate-duration="700"
+        />
+        <Info
+          title="address"
+          text="Ta Khmau, Kandal Cambodia"
+          animate-duration="800"
+        />
+        <Info title="language" text="Khmer, English" animate-duration="900" />
       </div>
       <div
         class="overflow-hidden rounded-xl border-primary shadow-border border-4"
         data-aos="fade-right"
         data-aos-duration="500"
         data-aos-anchor-placement="top-bottom"
-        data-aos-once="true"
+        data-aos-once="false"
       >
         <img src="../assets/me.jpg" alt="" width="352" />
       </div>

@@ -9,7 +9,7 @@ defineProps({
     class="p-2 border border-primary rounded-full"
     data-aos="fade-up"
     v-bind:data-aos-duration="duration"
-    data-aos-once="true"
+    data-aos-once="false"
   >
     <v-icon
       v-bind:name="icon"

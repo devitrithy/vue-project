@@ -10,24 +10,70 @@ import Graduate from "./icons/Graduate.vue";
     <Heading title="My Education" />
     <div class="flex flex-row gap-10 justify-evenly items-center py-20">
       <!--  -->
-      <div class="xl:block hidden">
+      <div
+        class="xl:block hidden"
+        data-aos="fade-left"
+        data-aos-duration="400"
+        data-aos-anchor-placement="top-bottom"
+        data-aos-once="false"
+      >
         <Certificate />
       </div>
       <div class="md:flex flex-col items-center hidden">
         <div
           class="w-[52px] h-[52px] flex justify-center items-center p-1 z-10 ed"
+          data-aos="fade-down"
+          data-aos-duration="400"
+          data-aos-anchor-placement="top-bottom"
+          data-aos-once="false"
         >
           <Graduated />
         </div>
-        <div class="box-style -mt-[.5px]"></div>
-        <div class="w-[30px] h-[30px] ed z-10 -mt-[.5px]"></div>
-        <div class="box-style -mt-[.5px]"></div>
-        <div class="w-[30px] h-[30px] ed z-10 -mt-[.5px]"></div>
-        <div class="box-style border-b -mt-[.5px]"></div>
+        <div
+          class="box-style -mt-[.5px]"
+          data-aos="fade-down"
+          data-aos-duration="400"
+          data-aos-anchor-placement="top-bottom"
+          data-aos-once="false"
+        ></div>
+        <div
+          class="w-[30px] h-[30px] ed z-10 -mt-[.5px]"
+          data-aos="fade-down"
+          data-aos-duration="500"
+          data-aos-anchor-placement="top-bottom"
+          data-aos-once="false"
+        ></div>
+        <div
+          class="box-style -mt-[.5px]"
+          data-aos="fade-down"
+          data-aos-duration="500"
+          data-aos-anchor-placement="top-bottom"
+          data-aos-once="false"
+        ></div>
+        <div
+          class="w-[30px] h-[30px] ed z-10 -mt-[.5px]"
+          data-aos="fade-down"
+          data-aos-duration="600"
+          data-aos-anchor-placement="top-bottom"
+          data-aos-once="false"
+        ></div>
+        <div
+          class="box-style border-b -mt-[.5px]"
+          data-aos="fade-down"
+          data-aos-duration="600"
+          data-aos-anchor-placement="top-bottom"
+          data-aos-once="false"
+        ></div>
       </div>
       <div class="flex flex-col gap-7 justify-between">
         <!--  -->
-        <div class="box-item">
+        <div
+          class="box-item"
+          data-aos="fade-right"
+          data-aos-duration="400"
+          data-aos-anchor-placement="top-bottom"
+          data-aos-once="false"
+        >
           <div class="w-[120px]">
             <Graduation />
           </div>
@@ -41,7 +87,13 @@ import Graduate from "./icons/Graduate.vue";
             <h1 class="capitalize font-thin text-sm">2022 - Present</h1>
           </div>
         </div>
-        <div class="box-item">
+        <div
+          class="box-item"
+          data-aos="fade-right"
+          data-aos-duration="500"
+          data-aos-anchor-placement="top-bottom"
+          data-aos-once="false"
+        >
           <div class="w-[120px]">
             <Graduate />
           </div>
@@ -55,7 +107,13 @@ import Graduate from "./icons/Graduate.vue";
             <h1 class="capitalize font-thin text-sm">2019 - 2021</h1>
           </div>
         </div>
-        <div class="box-item">
+        <div
+          class="box-item"
+          data-aos="fade-right"
+          data-aos-duration="600"
+          data-aos-anchor-placement="top-bottom"
+          data-aos-once="false"
+        >
           <div class="w-[120px]">
             <Graduate />
           </div>
