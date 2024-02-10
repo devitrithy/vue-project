@@ -11,7 +11,7 @@ import { store } from "./store";
 
 <template>
   <Navbar />
-  <div @click="store.changeNavMode">
+  <div @click="store.closeNavbar">
     <section id="home" class="h-screen pt-[80px]"><Home /></section>
     <section id="about_me" class="pt-[80px] items-start">
       <AboutMe />

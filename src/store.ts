@@ -5,4 +5,7 @@ export const store = reactive({
   changeNavMode() {
     this.showNavbar = !this.showNavbar;
   },
+  closeNavbar() {
+    this.showNavbar = false;
+  },
 });
