@@ -75,10 +75,10 @@ import Graduate from "./icons/Graduate.vue";
 
 <style>
 .ed {
-  @apply rounded-full bg-primary bg-opacity-20 border border-primary;
+  @apply rounded-full bg-primary/20  border border-primary;
 }
 .secondary {
-  @apply bg-primary/20 border-primary;
+  @apply bg-primary/10 border-primary;
 }
 .box-item {
   @apply lg:w-[700px] h-[200px] min-w-[300px] secondary border rounded-xl shadow-lg shadow-primary/20 p-5 lg:pl-10 flex items-center gap-5;

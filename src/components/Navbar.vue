@@ -32,8 +32,8 @@ let show: Ref<boolean> = ref(false);
     </nav>
   </header>
   <nav
-    class="w-2/3 h-screen border-l border-primary/20 z-50 fixed right-0 lg:hidden nav flex flex-col items-center gap-10"
-    :class="{ hidden: show != true }"
+    class="w-2/3 h-screen border-l border-primary/20 z-50 fixed right-0 lg:hidden nav flex flex-col items-center gap-10 translate-x-0 transition transform duration-300"
+    :class="{ ' translate-x-full': show != true }"
   >
     <button
       class="block lg:hidden absolute right-4 top-4"
