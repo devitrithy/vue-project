@@ -12,7 +12,8 @@ import Hobbie from "./shared/Hobbie.vue";
       <div
         class="block min-w-[300px] max-w-[700px]"
         data-aos="fade-right"
-        data-aos-anchor-placement="bottom-bottom"
+        data-aos-duration="500"
+        data-aos-anchor-placement="top-bottom"
       >
         <h1 class="text-primary text-2xl uppercase font-bold">
           Full-Stack Developer
@@ -33,7 +34,7 @@ import Hobbie from "./shared/Hobbie.vue";
         class="overflow-hidden rounded-xl border-primary shadow-border border-4"
         data-aos="fade-left"
         data-aos-duration="500"
-        data-aos-anchor-placement="bottom-bottom"
+        data-aos-anchor-placement="top-bottom"
       >
         <img src="../assets/me.jpg" alt="" width="352" />
       </div>
@@ -43,7 +44,7 @@ import Hobbie from "./shared/Hobbie.vue";
         <h1 class="uppercase text-primary font-bold text-2xl">interest</h1>
         <div class="flex gap-5 flex-wrap justify-center">
           <!--  -->
-          <Hobbie>
+          <Hobbie duration="300">
             <v-icon
               name="bi-music-note"
               class="text-primary"
@@ -51,7 +52,7 @@ import Hobbie from "./shared/Hobbie.vue";
               title="Listen to music"
             />
           </Hobbie>
-          <Hobbie>
+          <Hobbie duration="400">
             <v-icon
               name="bi-code-slash"
               class="text-primary"
@@ -59,7 +60,7 @@ import Hobbie from "./shared/Hobbie.vue";
               title="Coding"
             />
           </Hobbie>
-          <Hobbie>
+          <Hobbie duration="500">
             <v-icon
               name="bi-search-heart"
               class="text-primary"
@@ -67,7 +68,7 @@ import Hobbie from "./shared/Hobbie.vue";
               title="Research"
             />
           </Hobbie>
-          <Hobbie>
+          <Hobbie duration="600">
             <v-icon
               name="gi-shuttlecock"
               class="text-primary"
@@ -75,7 +76,7 @@ import Hobbie from "./shared/Hobbie.vue";
               title="Badminton"
             />
           </Hobbie>
-          <Hobbie>
+          <Hobbie duration="700">
             <v-icon
               name="la-youtube"
               class="text-primary"
@@ -83,7 +84,7 @@ import Hobbie from "./shared/Hobbie.vue";
               title="Watch Youtube Video"
             />
           </Hobbie>
-          <Hobbie>
+          <Hobbie duration="800">
             <v-icon
               name="ai-ideas-repec"
               class="text-primary"
