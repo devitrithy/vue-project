@@ -27,7 +27,7 @@ import Graduate from "./icons/Graduate.vue";
       </div>
       <div class="flex flex-col gap-7 justify-between">
         <!--  -->
-        <div class="box-item">
+        <div class="box-item" v-motion-slide-visible-left>
           <div class="w-[120px]">
             <Graduation />
           </div>
@@ -41,7 +41,7 @@ import Graduate from "./icons/Graduate.vue";
             <h1 class="capitalize font-thin text-sm">2022 - Present</h1>
           </div>
         </div>
-        <div class="box-item">
+        <div class="box-item" v-motion-slide-visible-left>
           <div class="w-[120px]">
             <Graduate />
           </div>
@@ -55,7 +55,7 @@ import Graduate from "./icons/Graduate.vue";
             <h1 class="capitalize font-thin text-sm">2019 - 2021</h1>
           </div>
         </div>
-        <div class="box-item">
+        <div class="box-item" v-motion-slide-visible-left>
           <div class="w-[120px]">
             <Graduate />
           </div>

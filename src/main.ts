@@ -2,6 +2,7 @@
 import { createApp } from "vue";
 import App from "./App.vue";
 import "./assets/main.css";
+import { MotionPlugin } from "@vueuse/motion";
 
 import { OhVueIcon, addIcons } from "oh-vue-icons";
 
@@ -14,5 +15,6 @@ addIcons(...Fa);
 addIcons(...Gi);
 
 const app = createApp(App);
+app.use(MotionPlugin);
 app.component("v-icon", OhVueIcon);
 app.mount("#app");
