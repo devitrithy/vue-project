@@ -7,10 +7,6 @@ import Person from "./icons/Person.vue";
   >
     <div
       class="2xl:text-6xl xl:text-5xl lg:text-5xl md:text-3xl text-4xl font-bold md:block flex justify-center items-center flex-col md:w-1/2"
-      data-aos="fade-right"
-      data-aos-duration="400"
-      data-aos-anchor-placement="top-center"
-      data-aos-once="true"
     >
       <h1 class="mb-5">Hello</h1>
       <h1 class="mb-5">I'm Rithy Devit,</h1>
@@ -25,10 +21,6 @@ import Person from "./icons/Person.vue";
       </a>
     </div>
     <Person
-      data-aos="fade-left"
-      data-aos-duration="400"
-      data-aos-anchor-placement="top-center"
-      data-aos-once="true"
       class="xl:w-[785px] xl:h-[572px] lg:w-[585px] lg:h-[372px] md:w-[485px] md:h-[272px] w-[400px] h-[200px]"
     />
   </main>

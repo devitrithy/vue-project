@@ -13,57 +13,29 @@ import Graduate from "./icons/Graduate.vue";
       <div
         class="xl:block hidden"
         data-aos="fade-left"
-        data-aos-duration="400"
+        data-aos-duration="300"
         data-aos-anchor-placement="top-bottom"
         data-aos-once="false"
       >
         <Certificate />
       </div>
       <div class="md:flex flex-col items-center hidden">
-        <div
-          class="w-[52px] h-[52px] flex justify-center items-center p-1 z-10 ed"
-          data-aos="fade-down"
-          data-aos-duration="400"
-          data-aos-anchor-placement="top-bottom"
-          data-aos-once="false"
-        >
-          <Graduated />
+        <div class="flex flex-col items-center justify-center">
+          <div
+            class="w-[52px] h-[52px] flex justify-center items-center p-1 z-10 ed"
+          >
+            <Graduated />
+          </div>
+          <div class="box-style -mt-[.5px]"></div>
         </div>
-        <div
-          class="box-style -mt-[.5px]"
-          data-aos="fade-down"
-          data-aos-duration="400"
-          data-aos-anchor-placement="top-bottom"
-          data-aos-once="false"
-        ></div>
-        <div
-          class="w-[30px] h-[30px] ed z-10 -mt-[.5px]"
-          data-aos="fade-down"
-          data-aos-duration="500"
-          data-aos-anchor-placement="top-bottom"
-          data-aos-once="false"
-        ></div>
-        <div
-          class="box-style -mt-[.5px]"
-          data-aos="fade-down"
-          data-aos-duration="500"
-          data-aos-anchor-placement="top-bottom"
-          data-aos-once="false"
-        ></div>
-        <div
-          class="w-[30px] h-[30px] ed z-10 -mt-[.5px]"
-          data-aos="fade-down"
-          data-aos-duration="600"
-          data-aos-anchor-placement="top-bottom"
-          data-aos-once="false"
-        ></div>
-        <div
-          class="box-style border-b -mt-[.5px]"
-          data-aos="fade-down"
-          data-aos-duration="600"
-          data-aos-anchor-placement="top-bottom"
-          data-aos-once="false"
-        ></div>
+        <div class="flex flex-col items-center justify-center">
+          <div class="w-[30px] h-[30px] ed z-10 -mt-[.5px]"></div>
+          <div class="box-style -mt-[.5px]"></div>
+        </div>
+        <div class="flex flex-col justify-center items-center">
+          <div class="w-[30px] h-[30px] ed z-10 -mt-[.5px]"></div>
+          <div class="box-style border-b -mt-[.5px]"></div>
+        </div>
       </div>
       <div class="flex flex-col gap-7 justify-between">
         <!--  -->

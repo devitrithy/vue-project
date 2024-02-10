@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import Contact from "./shared/Contact.vue";
+import { store } from "../store";
 import { ref, type Ref } from "vue";
 let title = "{{ devitRithy }}";
-let show: Ref<boolean> = ref(false);
 </script>
 <template>
   <header
@@ -14,7 +14,7 @@ let show: Ref<boolean> = ref(false);
       <a href="#home" class="text-primary text-2xl font-extrabold">{{
         title
       }}</a>
-      <button class="block lg:hidden" @click="show = !show">
+      <button class="block lg:hidden" @click="store.changeNavMode">
         <v-icon name="co-menu" class="text-primary" scale="1.5" />
       </button>
       <ul
@@ -33,11 +33,11 @@ let show: Ref<boolean> = ref(false);
   </header>
   <nav
     class="w-2/3 h-screen border-l border-primary/20 z-50 fixed right-0 lg:hidden nav flex flex-col items-center gap-10 translate-x-0 transition transform-cpu duration-300"
-    :class="{ ' translate-x-full': show != true }"
+    :class="{ ' translate-x-full': store.showNavbar != true }"
   >
     <button
       class="block lg:hidden absolute right-4 top-4"
-      @click="show = !show"
+      @click="store.changeNavMode"
     >
       <v-icon name="io-close" class="text-primary" scale="1.5" />
     </button>
@@ -45,19 +45,41 @@ let show: Ref<boolean> = ref(false);
       class="uppercase flex flex-col gap-5 px-5 py-1 items-center text-opacity-50 text-text mt-20 w-full"
     >
       <li class="item-width">
-        <a class="nav-item hidden-nav" href="#home">Home</a>
+        <a class="nav-item hidden-nav" href="#home" @click="store.changeNavMode"
+          >Home</a
+        >
       </li>
       <li class="item-width">
-        <a class="nav-item hidden-nav" href="#about_me">about me</a>
+        <a
+          class="nav-item hidden-nav"
+          href="#about_me"
+          @click="store.changeNavMode"
+          >about me</a
+        >
       </li>
       <li class="item-width">
-        <a class="nav-item hidden-nav" href="#education">education</a>
+        <a
+          class="nav-item hidden-nav"
+          href="#education"
+          @click="store.changeNavMode"
+          >education</a
+        >
       </li>
       <li class="item-width">
-        <a class="nav-item hidden-nav" href="#skills">skills</a>
+        <a
+          class="nav-item hidden-nav"
+          href="#skills"
+          @click="store.changeNavMode"
+          >skills</a
+        >
       </li>
       <li class="item-width">
-        <a class="nav-item hidden-nav" href="#experiences">experiences</a>
+        <a
+          class="nav-item hidden-nav"
+          href="#experiences"
+          @click="store.changeNavMode"
+          >experiences</a
+        >
       </li>
     </ul>
     <div class="flex items-center w-full justify-center gap-1">
@@ -90,3 +112,4 @@ let show: Ref<boolean> = ref(false);
   @apply hover:text-primary;
 }
 </style>
+@/components/store.js
