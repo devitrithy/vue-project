@@ -32,7 +32,7 @@ let show: Ref<boolean> = ref(false);
     </nav>
   </header>
   <nav
-    class="w-2/3 h-screen border-l border-primary/20 z-50 fixed right-0 lg:hidden nav flex flex-col items-center gap-10 translate-x-0 transition transform duration-300"
+    class="w-2/3 h-screen border-l border-primary/20 z-50 fixed right-0 lg:hidden nav flex flex-col items-center gap-10 translate-x-0 transition transform-cpu duration-300"
     :class="{ ' translate-x-full': show != true }"
   >
     <button
