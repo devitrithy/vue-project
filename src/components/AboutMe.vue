@@ -9,10 +9,7 @@ import Hobbie from "./shared/Hobbie.vue";
     <div
       class="flex flex-col-reverse lg:flex-row gap-10 justify-evenly items-center py-20"
     >
-      <div
-        class="block min-w-[300px] max-w-[700px]"
-        v-motion-slide-visible-left
-      >
+      <div class="block min-w-[300px] max-w-[700px]">
         <h1 class="text-primary text-2xl uppercase font-bold">
           Full-Stack Developer
         </h1>
@@ -30,7 +27,6 @@ import Hobbie from "./shared/Hobbie.vue";
       </div>
       <div
         class="overflow-hidden rounded-xl border-primary shadow-border border-4"
-        v-motion-slide-visible-right
       >
         <img src="../assets/me.jpg" alt="" width="352" />
       </div>
