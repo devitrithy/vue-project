@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import Contact from "./shared/Contact.vue";
 import { store } from "../store";
-import { ref, type Ref } from "vue";
 let title = "{{ devitRithy }}";
 </script>
 <template>
