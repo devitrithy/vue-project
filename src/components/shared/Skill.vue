@@ -10,6 +10,8 @@ const props = defineProps({
 let def = 256;
 let percentage = ref(0);
 let skillPercent = (def * parseInt(props.percent!)) / 100;
+console.log(skillPercent);
+
 let skillPercentage: Ref<number> = ref(0.0);
 let width: Ref<StyleValue> = ref("width: 10px");
 let startAnimation: Ref<boolean> = ref(false);
@@ -29,7 +31,7 @@ function startAnimate() {
   }, 10);
   setTimeout(() => {
     clearInterval(animate);
-  }, 3000);
+  }, 5000);
 }
 
 let scroll = ref(0.0);
