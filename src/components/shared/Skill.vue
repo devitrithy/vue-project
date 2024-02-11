@@ -46,7 +46,7 @@ window.addEventListener("scroll", () => {
 });
 </script>
 <template>
-  <div class="my-5 uppercase">
+  <div class="mb-5 uppercase">
     <h3>{{ subject }}</h3>
     <div class="flex items-center gap-4 w-[310px] justify-between">
       <span class="bar"

@@ -13,6 +13,7 @@
   "dependencies": {
     "aos": "^2.3.4",
     "oh-vue-icons": "1.0.0-rc3",
+    "swiper": "^11.0.6",
     "vue": "^3.4.15"
   },
   "devDependencies": {

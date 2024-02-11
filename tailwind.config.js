@@ -20,5 +20,5 @@ export default {
       'text': '#FFFFFF',
     },
   },
-  plugins: [],
+
 }
