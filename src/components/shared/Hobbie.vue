@@ -8,6 +8,7 @@ defineProps({
   <div
     class="p-2 border border-primary rounded-full"
     data-aos="fade-up"
+    data-aos-offset="200"
     v-bind:data-aos-duration="duration"
     data-aos-once="false"
   >

@@ -14,8 +14,8 @@ import Hobbie from "./shared/Hobbie.vue";
           class="text-primary text-2xl uppercase font-bold"
           data-aos="fade-right"
           data-aos-duration="500"
-          data-aos-anchor-placement="top-bottom"
           data-aos-once="false"
+          data-aos-anchor-placement="top-bottom"
         >
           Full-Stack Developer
         </h1>
@@ -24,8 +24,8 @@ import Hobbie from "./shared/Hobbie.vue";
           class="font-light"
           data-aos="fade-right"
           data-aos-duration="600"
-          data-aos-anchor-placement="top-bottom"
           data-aos-once="false"
+          data-aos-anchor-placement="top-bottom"
         >
           Management Information System student. I consider myself a responsible
           and orderly person. I am looking forward for my first work experience.
@@ -49,8 +49,10 @@ import Hobbie from "./shared/Hobbie.vue";
         class="overflow-hidden rounded-xl border-primary shadow-border border-4"
         data-aos="fade-right"
         data-aos-duration="500"
-        data-aos-anchor-placement="top-bottom"
+        data-aos-easing="ease-in-out"
+        data-aos-mirror="true"
         data-aos-once="false"
+        data-aos-anchor-placement="top-bottom"
       >
         <img src="../assets/me.jpg" alt="" width="352" />
       </div>

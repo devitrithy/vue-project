@@ -19,10 +19,10 @@ import { store } from "./store";
     <section id="education" class="pt-[80px] items-start">
       <Education />
     </section>
-    <section id="skills" class="pt-[80px] items-start">
+    <section id="skills" class="pt-[80px] items-start h-screen">
       <Skill />
     </section>
-    <section id="experiences" class="pt-[80px] items-start">
+    <section id="experiences" class="pt-[80px] items-start h-screen">
       <Project />
     </section>
   </div>
