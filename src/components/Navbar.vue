@@ -17,7 +17,7 @@ let title = "{{ devitRithy }}";
         <v-icon name="co-menu" class="text-primary" scale="1.5" />
       </button>
       <ul
-        class="uppercase lg:flex gap-5 px-5 py-1 bg-primary bg-opacity-20 rounded-full items-center border-primary border text-opacity-50 text-text md:hidden hidden"
+        class="uppercase lg:flex gap-5 px-5 py-1 bg-primary/10 rounded-full items-center border-primary border text-opacity-50 text-text md:hidden hidden"
       >
         <li class="nav-item"><a href="#home">Home</a></li>
         <li class="nav-item"><a href="#about_me">about me</a></li>
@@ -104,7 +104,7 @@ let title = "{{ devitRithy }}";
   @apply min-w-52 max-w-96 w-full;
 }
 .hidden-nav {
-  @apply bg-primary/20 border border-primary rounded-full h-10 flex items-center justify-center item-width;
+  @apply bg-primary/10 border border-primary rounded-full h-10 flex items-center justify-center item-width;
 }
 
 .nav-item {
