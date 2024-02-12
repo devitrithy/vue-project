@@ -2,19 +2,6 @@
 import Heading from "./shared/Heading.vue";
 import Info from "./shared/Info.vue";
 import Hobbie from "./shared/Hobbie.vue";
-
-import { ref, type Ref } from "vue";
-let isMobile: Ref<boolean> = ref(false);
-detectMobile();
-
-function detectMobile() {
-  const userAgent = navigator.userAgent;
-  isMobile.value =
-    /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
-      userAgent
-    );
-  console.log(isMobile.value);
-}
 </script>
 <template>
   <main class="container flex flex-col justify-between px-5">
@@ -67,7 +54,7 @@ function detectMobile() {
         data-aos-once="false"
         data-aos-anchor-placement="top-bottom"
       >
-        <img src="../assets/me.jpg" alt="" width="352" />
+        <img src="../assets/profile_2.jpg" alt="" width="352" />
       </div>
     </div>
     <div class="flex justify-center items-center">

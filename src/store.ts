@@ -9,4 +9,5 @@ export const store = reactive({
     this.showNavbar = false;
   },
   startSkillAnimation: false,
+  isMobile: false,
 });

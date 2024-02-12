@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import Person from "./icons/Person.vue";
-import IconScrollDown from "./icons/ScrollDown.vue";
 function downloadFile() {
   const link = document.createElement("a");
   link.href = "./rithy_devit.pdf";
