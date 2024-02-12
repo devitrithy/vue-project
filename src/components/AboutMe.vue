@@ -62,12 +62,20 @@ import Hobbie from "./shared/Hobbie.vue";
         <h1 class="uppercase text-primary font-bold text-2xl">interest</h1>
         <div class="flex gap-5 flex-wrap justify-center">
           <!--  -->
-          <Hobbie duration="500" icon="bi-music-note"> </Hobbie>
-          <Hobbie duration="600" icon="bi-code-slash"> </Hobbie>
-          <Hobbie duration="700" icon="bi-search-heart"> </Hobbie>
-          <Hobbie duration="800" icon="gi-shuttlecock"> </Hobbie>
-          <Hobbie duration="900" icon="la-youtube"> </Hobbie>
-          <Hobbie duration="1000" icon="ai-ideas-repec"> </Hobbie>
+          <Hobbie duration="500" icon="bi-music-note" title="Listen to Music" />
+          <Hobbie duration="600" icon="bi-code-slash" title="Coding" />
+          <Hobbie
+            duration="700"
+            icon="bi-search-heart"
+            title="Research New Web Trend"
+          />
+          <Hobbie duration="800" icon="gi-shuttlecock" title="Badmintin" />
+          <Hobbie duration="900" icon="la-youtube" title="Watching Youtube" />
+          <Hobbie
+            duration="1000"
+            icon="ai-ideas-repec"
+            title="Thinking About Project"
+          />
         </div>
       </div>
     </div>
