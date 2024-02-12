@@ -19,7 +19,7 @@ import IconTypeScript from "./icons/Typescript.vue";
 <template>
   <main class="container flex flex-col justify-between px-5">
     <Heading title="My Skills Set" />
-    <div class="py-20 flex gap-5 overflow-x-scroll no-scrollbar">
+    <div class="py-20 flex gap-5">
       <SkillContainer title="Technical Skill">
         <Skill percent="90" subject="HTML5 | CSS3"
           ><IconHtml /><IconCss class="text-xl"

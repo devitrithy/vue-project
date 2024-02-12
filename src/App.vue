@@ -5,12 +5,30 @@ import AboutMe from "./components/AboutMe.vue";
 import Education from "./components/Education.vue";
 import Skill from "./components/Skill.vue";
 import Project from "./components/Project.vue";
+import IconScrollDown from "./components/icons/ScrollDown.vue";
 
 import { store } from "./store";
+import { ref } from "vue";
+
+let scroll = ref(0.0);
+window.addEventListener("scroll", () => {
+  if (scroll.value > 2000) {
+    store.startSkillAnimation = true;
+  } else {
+    store.startSkillAnimation = false;
+  }
+  scroll.value = window.scrollY;
+});
 </script>
 
 <template>
   <Navbar />
+  <a
+    href="#about_me"
+    class="absolute bottom-20 left-1/2 animate-bounce text-4xl text-primary"
+  >
+    <IconScrollDown />
+  </a>
   <div @click="store.closeNavbar">
     <section id="home" class="h-screen pt-[80px]"><Home /></section>
     <section id="about_me" class="pt-[80px] items-start">

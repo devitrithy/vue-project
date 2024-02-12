@@ -1,25 +1,12 @@
 <script setup lang="ts">
-import { ref, type Ref, type StyleValue } from "vue";
-
+import { store } from "../../store";
 const props = defineProps({
   subject: String,
   percent: String,
   yPoint: { type: String, default: "2000" },
 });
 
-let def = 256;
 let width = `width: ${parseInt(props.percent!)}%`;
-let startAnimation: Ref<boolean> = ref(false);
-
-let scroll = ref(0.0);
-window.addEventListener("scroll", () => {
-  if (scroll.value > parseInt(props.yPoint!)) {
-    startAnimation.value = true;
-  } else {
-    startAnimation.value = false;
-  }
-  scroll.value = window.scrollY;
-});
 </script>
 <template>
   <div class="uppercase">
@@ -31,7 +18,7 @@ window.addEventListener("scroll", () => {
       <span class="bar"
         ><span
           v-bind:style="width"
-          :class="{ content: startAnimation === true }"
+          :class="{ content: store.startSkillAnimation === true }"
         ></span
       ></span>
       <h1>{{ percent }}%</h1>

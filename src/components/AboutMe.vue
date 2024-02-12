@@ -2,6 +2,19 @@
 import Heading from "./shared/Heading.vue";
 import Info from "./shared/Info.vue";
 import Hobbie from "./shared/Hobbie.vue";
+
+import { ref, type Ref } from "vue";
+let isMobile: Ref<boolean> = ref(false);
+detectMobile();
+
+function detectMobile() {
+  const userAgent = navigator.userAgent;
+  isMobile.value =
+    /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+      userAgent
+    );
+  console.log(isMobile.value);
+}
 </script>
 <template>
   <main class="container flex flex-col justify-between px-5">
@@ -21,7 +34,7 @@ import Hobbie from "./shared/Hobbie.vue";
         </h1>
         <br />
         <p
-          class="font-light"
+          class="font-light text-wrap"
           data-aos="fade-right"
           data-aos-duration="600"
           data-aos-once="false"

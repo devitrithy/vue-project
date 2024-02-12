@@ -101,7 +101,7 @@ let title = "{{ devitRithy }}";
   -webkit-backdrop-filter: blur(17.8px);
 }
 .item-width {
-  @apply min-w-52 max-w-96 w-full;
+  @apply min-w-40 max-w-96 w-full;
 }
 .hidden-nav {
   @apply bg-primary/10 border border-primary rounded-full h-10 flex items-center justify-center item-width;

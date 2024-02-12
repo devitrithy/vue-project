@@ -8,4 +8,5 @@ export const store = reactive({
   closeNavbar() {
     this.showNavbar = false;
   },
+  startSkillAnimation: false,
 });
