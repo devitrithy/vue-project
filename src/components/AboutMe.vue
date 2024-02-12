@@ -40,7 +40,7 @@ import Hobbie from "./shared/Hobbie.vue";
         />
         <Info
           title="address"
-          text="Ta Khmau, Kandal Cambodia"
+          text="Prachum Angk Village, Cheung Kaeub Commune, Kandal Stueng District, Kandal, Cambodia"
           animate-duration="1000"
         />
         <Info title="language" text="Khmer, English" animate-duration="1100" />

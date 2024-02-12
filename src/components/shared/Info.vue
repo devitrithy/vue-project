@@ -14,6 +14,6 @@ defineProps({
     data-aos-anchor-placement="top-bottom"
   >
     <span class="font-bold text-primary uppercase w-1/5">{{ title }}</span
-    >:<span> {{ text }}</span>
+    >:<span class="text-wrap w-3/4"> {{ text }}</span>
   </h1>
 </template>
