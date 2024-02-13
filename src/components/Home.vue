@@ -9,7 +9,7 @@ function downloadFile() {
 </script>
 <template>
   <main
-    class="container flex md:flex-row flex-col-reverse justify-between items-center px-5 gap-10"
+    class="container flex md:flex-row flex-col-reverse md:justify-between justify-center items-center px-5 gap-10"
   >
     <div
       class="2xl:text-6xl xl:text-5xl lg:text-5xl md:text-3xl text-4xl font-bold md:block flex justify-center items-center flex-col md:w-1/2"
