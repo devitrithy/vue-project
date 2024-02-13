@@ -10,4 +10,5 @@ export const store = reactive({
   },
   startSkillAnimation: false,
   isMobile: false,
+  scorllUp: false,
 });

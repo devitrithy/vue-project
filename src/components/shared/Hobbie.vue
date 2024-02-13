@@ -11,7 +11,6 @@ defineProps({
     data-aos="fade-up"
     data-aos-offset="200"
     v-bind:data-aos-duration="duration"
-    data-aos-once="false"
   >
     <v-icon v-bind:name="icon" class="text-primary" scale="2.0" />
   </div>

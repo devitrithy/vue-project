@@ -14,7 +14,6 @@ import Hobbie from "./shared/Hobbie.vue";
           class="text-primary text-2xl uppercase font-bold"
           data-aos="fade-right"
           data-aos-duration="500"
-          data-aos-once="false"
           data-aos-anchor-placement="top-bottom"
         >
           Full-Stack Developer
@@ -24,7 +23,6 @@ import Hobbie from "./shared/Hobbie.vue";
           class="font-light text-wrap"
           data-aos="fade-right"
           data-aos-duration="600"
-          data-aos-once="false"
           data-aos-anchor-placement="top-bottom"
         >
           Management Information System student. I consider myself a responsible
@@ -46,12 +44,11 @@ import Hobbie from "./shared/Hobbie.vue";
         <Info title="language" text="Khmer, English" animate-duration="1100" />
       </div>
       <div
-        class="overflow-hidden rounded-xl border-primary shadow-border border-4"
+        class="overflow-hidden rounded-xl border-background shadow-border border-4"
         data-aos="fade-right"
         data-aos-duration="500"
         data-aos-easing="ease-in-out"
         data-aos-mirror="true"
-        data-aos-once="false"
         data-aos-anchor-placement="top-bottom"
       >
         <img src="../assets/profile_2.jpg" alt="" width="352" />

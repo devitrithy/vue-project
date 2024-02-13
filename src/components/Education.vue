@@ -111,7 +111,7 @@ import Graduate from "./icons/Graduate.vue";
   @apply bg-primary/10 border-primary;
 }
 .box-item {
-  @apply lg:w-[700px] h-[200px] min-w-[300px] secondary border rounded-xl shadow-lg shadow-primary/20 p-5 lg:pl-10 flex items-center gap-5;
+  @apply lg:w-[700px] h-[200px] min-w-[300px] secondary border rounded-xl shadow-lg shadow-primary/10 p-5 lg:pl-10 flex items-center gap-5;
 }
 .box-style {
   @apply w-[8px] h-[187px] border-l border-r secondary;

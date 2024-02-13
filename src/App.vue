@@ -7,6 +7,7 @@ import Skill from "./components/Skill.vue";
 import Project from "./components/Project.vue";
 import IconScrollDown from "./components/icons/ScrollDown.vue";
 import IconTouchDown from "./components/icons/TouchDown.vue";
+import IconUp from "./components/icons/ScrollUp.vue";
 
 import { store } from "./store";
 import { ref } from "vue";
@@ -17,6 +18,12 @@ window.addEventListener("scroll", () => {
     store.startSkillAnimation = true;
   } else {
     store.startSkillAnimation = false;
+  }
+
+  if (scroll.value > 550) {
+    store.scorllUp = true;
+  } else {
+    store.scorllUp = false;
   }
   scroll.value = window.scrollY;
 });
@@ -47,6 +54,13 @@ function detectMobile() {
     class="absolute bottom-5 left-1/2 animate-bounce text-4xl text-primary"
   >
     <IconTouchDown />
+  </a>
+  <a
+    href="#home"
+    :class="{ 'translate-y-96': !store.scorllUp }"
+    class="z-20 transition-all transform translate-y-0 duration-500 fixed bottom-5 right-5 text-4xl text-primary p-1 bg-primary/10 rounded-full nav border border-primary"
+  >
+    <IconUp />
   </a>
   <div @click="store.closeNavbar">
     <section id="home" class="h-screen pt-[80px]"><Home /></section>

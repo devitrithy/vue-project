@@ -19,14 +19,14 @@ function downloadFile() {
       <h1 class="text-primary mb-5">Full-Stack Developer</h1>
       <button
         @click="downloadFile"
-        class="text-xl font-bold py-2 px-10 bg-primary text-black rounded-full hover:bg-primary/90"
+        class="transition-all duration-300 text-xl font-bold py-2 px-10 bg-primary/10 border border-primary text-primary hover:bg-primary hover:text-background rounded-full shadow-lg hover:shadow-primary/10"
       >
         <v-icon class="mr-4" name="bi-cloud-download" scale="1.5" />
         <span>Download CV</span>
       </button>
     </div>
     <Person
-      class="xl:w-[785px] xl:h-[572px] lg:w-[585px] lg:h-[372px] md:w-[485px] md:h-[272px] w-[400px] h-[200px]"
+      class="xl:w-[785px] xl:h-[572px] lg:w-[585px] lg:h-[372px] md:w-[485px] md:h-[272px] w-[256px] h-[200px]"
     />
   </main>
 </template>

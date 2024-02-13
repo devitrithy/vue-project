@@ -31,17 +31,14 @@ let title = "{{ devitRithy }}";
     </nav>
   </header>
   <nav
-    class="w-2/3 h-screen border-l border-primary/20 z-50 fixed right-0 lg:hidden nav flex flex-col items-center gap-10 translate-x-0 transition transform-cpu duration-300"
+    class="w-2/3 h-screen border-l border-primary/20 z-50 fixed right-0 lg:hidden nav flex flex-col items-end gap-10 translate-x-0 transition transform-cpu duration-300"
     :class="{ ' translate-x-full': store.showNavbar != true }"
   >
-    <button
-      class="block lg:hidden absolute right-4 top-4"
-      @click="store.changeNavMode"
-    >
+    <button class="block lg:hidden m-4 float-end" @click="store.changeNavMode">
       <v-icon name="io-close" class="text-primary" scale="1.5" />
     </button>
     <ul
-      class="uppercase flex flex-col gap-5 px-5 py-1 items-center text-opacity-50 text-text mt-20 w-full"
+      class="uppercase flex flex-col gap-5 px-5 py-1 items-center text-opacity-50 text-text mt-10 w-full"
     >
       <li class="item-width">
         <a class="nav-item hidden-nav" href="#home" @click="store.changeNavMode"
@@ -81,14 +78,16 @@ let title = "{{ devitRithy }}";
         >
       </li>
     </ul>
-    <div class="flex items-center w-full justify-center gap-1">
-      <div class="w-1/4 h-[0.5px] bg-primary/20"></div>
-      <h1 class="text-primary font-bold text-xl uppercase">Contact Me</h1>
-      <div class="w-1/4 h-[0.5px] bg-primary/20"></div>
+    <div class="w-full flex flex-col items-center gap-10">
+      <div class="flex items-center w-full justify-center gap-1">
+        <div class="w-1/4 h-[0.5px] bg-primary/20"></div>
+        <h1 class="text-primary font-bold text-xl uppercase">Contact Me</h1>
+        <div class="w-1/4 h-[0.5px] bg-primary/20"></div>
+      </div>
+      <ul class="flex items-center gap-3">
+        <Contact />
+      </ul>
     </div>
-    <ul class="flex items-center gap-3">
-      <Contact />
-    </ul>
   </nav>
 </template>
 
