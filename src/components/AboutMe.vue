@@ -25,8 +25,14 @@ import Hobbie from "./shared/Hobbie.vue";
           data-aos-duration="600"
           data-aos-anchor-placement="top-bottom"
         >
-          Management Information System student. I consider myself a responsible
-          and orderly person. I am looking forward for my first work experience.
+          Hi there! I'm <span class="font-bold text-primary">Rithy Devit</span>,
+          an aspiring web developer and full-stack enthusiast. Currently
+          studying Management Information System, I'm passionate about creating
+          engaging web experiences. I'm proficient in HTML, CSS, JavaScript,
+          Vue.js, and Node.js etc., and I'm eager to learn more.
+          <br />
+          <br />
+          Let's connect and discuss how I can contribute to your projects!
         </p>
         <br />
         <Info title="fullname" text="Rithy Devit" animate-duration="700" />

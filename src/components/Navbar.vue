@@ -8,7 +8,7 @@ let title = "{{ devitRithy }}";
     class="flex items-center justify-center border-b border-b-primary border-opacity-20 w-screen fixed nav z-50"
   >
     <nav
-      class="flex justify-between items-center p-[15px] bg-transparent text-text container"
+      class="flex justify-between items-center p-[16px] bg-transparent text-text container"
     >
       <a href="#home" class="text-primary text-2xl font-extrabold">{{
         title
@@ -31,7 +31,7 @@ let title = "{{ devitRithy }}";
     </nav>
   </header>
   <nav
-    class="w-2/3 h-screen border-l border-primary/20 z-50 fixed right-0 lg:hidden nav flex flex-col items-end gap-10 translate-x-0 transition transform-cpu duration-300"
+    class="w-2/3 h-full border-l border-primary/20 z-50 fixed right-0 lg:hidden nav flex flex-col items-end gap-10 translate-x-0 transition transform-cpu duration-300"
     :class="{ ' translate-x-full': store.showNavbar != true }"
   >
     <button class="block lg:hidden m-4 float-end" @click="store.changeNavMode">

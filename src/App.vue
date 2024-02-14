@@ -76,5 +76,8 @@ function detectMobile() {
     <section id="experiences" class="pt-[80px] items-start">
       <Project />
     </section>
+    <section id="stay_connected" class="pt-[80px] items-start">
+      <Project />
+    </section>
   </div>
 </template>
