@@ -5,6 +5,7 @@ import AboutMe from "./components/AboutMe.vue";
 import Education from "./components/Education.vue";
 import Skill from "./components/Skill.vue";
 import Project from "./components/Project.vue";
+import StayConnected from "./components/StayConnected.vue";
 import IconScrollDown from "./components/icons/ScrollDown.vue";
 import IconTouchDown from "./components/icons/TouchDown.vue";
 import IconUp from "./components/icons/ScrollUp.vue";
@@ -73,11 +74,11 @@ function detectMobile() {
     <section id="skills" class="pt-[80px] items-start">
       <Skill />
     </section>
-    <section id="experiences" class="pt-[80px] items-start">
+    <section id="projects" class="pt-[80px] items-start">
       <Project />
     </section>
     <section id="stay_connected" class="pt-[80px] items-start">
-      <Project />
+      <StayConnected />
     </section>
   </div>
 </template>

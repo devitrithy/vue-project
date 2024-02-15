@@ -7,7 +7,7 @@ import Hobbie from "./shared/Hobbie.vue";
   <main class="container flex flex-col justify-between px-5">
     <Heading title="About Me" />
     <div
-      class="flex flex-col-reverse lg:flex-row gap-10 justify-evenly items-center py-20"
+      class="flex flex-col-reverse lg:flex-row gap-10 justify-between items-center py-20"
     >
       <div class="block min-w-[300px] max-w-[700px]">
         <h1

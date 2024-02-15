@@ -23,7 +23,7 @@ let title = "{{ devitRithy }}";
         <li class="nav-item"><a href="#about_me">about me</a></li>
         <li class="nav-item"><a href="#education">education</a></li>
         <li class="nav-item"><a href="#skills">skills</a></li>
-        <li class="nav-item"><a href="#experiences">experiences</a></li>
+        <li class="nav-item"><a href="#projects">projects</a></li>
       </ul>
       <ul class="lg:flex items-center gap-3 hidden">
         <Contact />
@@ -72,9 +72,9 @@ let title = "{{ devitRithy }}";
       <li class="item-width">
         <a
           class="nav-item hidden-nav"
-          href="#experiences"
+          href="#projects"
           @click="store.changeNavMode"
-          >experiences</a
+          >projects</a
         >
       </li>
     </ul>
