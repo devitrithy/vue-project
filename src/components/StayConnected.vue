@@ -65,6 +65,7 @@ async function sendMsg() {
             <Loading :class="{ hidden: loading !== true }" class="text-2xl" />
             <span v-if="send === 0">Successfully Sent</span>
             <span v-else-if="send === 1">Failed to Sent</span>
+            <span v-else-if="loading">Sending</span>
             <span v-else>Send</span>
           </span>
         </button>
