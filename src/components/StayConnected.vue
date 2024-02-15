@@ -1,22 +1,28 @@
 <script setup lang="ts">
 import axios from "axios";
 import Heading from "./shared/Heading.vue";
+import Loading from "./icons/Loading.vue";
 import StayConnected from "./shared/StayConnected.vue";
-let name: String;
-let email: String;
-let description: String;
+import { ref, type Ref } from "vue";
+let loading: Ref<boolean> = ref(false);
+let send: Ref<number> = ref(2);
+let name: Ref<String> = ref("");
+let email: Ref<String> = ref("");
+let description: Ref<string> = ref("");
 
 async function sendMsg() {
+  loading.value = true;
   await axios
     .post("https://devit-message-server.vercel.app/api/message", {
-      name: name,
-      email: email,
-      description: description,
+      name: name.value,
+      email: email.value,
+      description: description.value,
     })
     .then(() => {
-      console.log("Done");
+      loading.value = false;
+      send.value = 0;
     })
-    .catch((err) => console.log(err));
+    .catch((err) => (send.value = 1));
 }
 </script>
 <template>
@@ -30,18 +36,18 @@ async function sendMsg() {
       />
       <div class="grid gap-5">
         <div class="grid gap-2">
-          <label for="subject">Fullname</label>
-          <input type="text" id="subject" class="form-input" v-bind="name" />
+          <label for="subject">FULLNAME</label>
+          <input type="text" id="subject" class="form-input" v-model="name" />
         </div>
         <div class="grid gap-2">
           <label for="email">EMAIL</label>
-          <input type="email" class="form-input" v-bind="email" />
+          <input type="email" class="form-input" v-model="email" />
         </div>
 
         <div class="grid gap-2">
           <label for="description">DESCRIPTION</label>
           <textarea
-            v-bind="description"
+            v-model="description"
             name=""
             id="description"
             cols="100"
@@ -50,11 +56,17 @@ async function sendMsg() {
           ></textarea>
         </div>
         <button
+          :disabled="send === 0"
           type="button"
           @click="sendMsg"
-          class="py-2 bg-primary/10 border border-primary hover:bg-primary transition-all duration-500 rounded-full hover:text-black"
+          class="py-2 bg-primary/10 border border-primary hover:bg-primary transition-all duration-500 rounded-full hover:text-black flex items-center justify-center disabled:text-gray-500 disabled:hover:bg-primary/10"
         >
-          Send
+          <span class="flex items-center gap-4">
+            <Loading :class="{ hidden: loading !== true }" class="text-2xl" />
+            <span v-if="send === 0">Successfully Sent</span>
+            <span v-else-if="send === 1">Failed to Sent</span>
+            <span v-else>Send</span>
+          </span>
         </button>
       </div>
     </div>
