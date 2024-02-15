@@ -15,8 +15,8 @@ defineProps({
   >
     <slot></slot>
     <div class="px-4 py-2">
-      <h1 class="text-xl font-bold py-2">{{ title || "Title" }}</h1>
-      <h3 class="font-medium text-sm py-2">{{ date || "2021 - 2022" }}</h3>
+      <h1 class="text-xl font-bold py-2">{{ title }}</h1>
+      <h3 class="font-medium text-sm py-2">{{ date }}</h3>
       <div class="flex justify-between items-center gap-4 my-2">
         <a
           target="_blank"

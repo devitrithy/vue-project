@@ -1,6 +1,11 @@
 {
-  "name": "vue-project",
-  "version": "0.0.0",
+  "name": "rithy-devit-portfolio",
+  "author": {
+    "name": "Rithy Devit",
+    "email": "devitrithy1@gmail.com",
+    "url": "http://github.com/devitrithy"
+  },
+  "version": "1.0.0",
   "private": true,
   "type": "module",
   "scripts": {
@@ -12,6 +17,7 @@
   },
   "dependencies": {
     "aos": "^2.3.4",
+    "axios": "^1.6.7",
     "oh-vue-icons": "1.0.0-rc3",
     "vue": "^3.4.15"
   },
