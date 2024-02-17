@@ -3,21 +3,24 @@ import axios from "axios";
 import Heading from "./shared/Heading.vue";
 import Loading from "./icons/Loading.vue";
 import StayConnected from "./shared/StayConnected.vue";
-import { ref, type Ref } from "vue";
+import { reactive, ref, type Ref } from "vue";
 let loading: Ref<boolean> = ref(false);
 let send: Ref<number> = ref(2);
-let name: Ref<String> = ref("");
-let telegram: Ref<String> = ref("");
-let email: Ref<String> = ref("");
-let description: Ref<string> = ref("");
+const form = reactive({
+  name: "",
+  telegram: "",
+  email: "",
+  description: "",
+});
 
 async function sendMsg() {
   loading.value = true;
   await axios
     .post("https://devit-message-server.vercel.app/api/message", {
-      name: name.value,
-      email: email.value,
-      description: description.value,
+      name: form.name,
+      telegram: form.telegram,
+      email: form.email,
+      description: form.description,
     })
     .then(() => {
       loading.value = false;
@@ -38,21 +41,26 @@ async function sendMsg() {
       <div class="grid gap-5">
         <div class="grid gap-2">
           <label for="subject">FULLNAME</label>
-          <input type="text" id="subject" class="form-input" v-model="name" />
+          <input
+            type="text"
+            id="subject"
+            class="form-input"
+            v-model="form.name"
+          />
         </div>
         <div class="grid gap-2">
           <label for="email">EMAIL</label>
-          <input type="email" class="form-input" v-model="email" />
+          <input type="email" class="form-input" v-model="form.email" />
         </div>
         <div class="grid gap-2">
           <label for="telegram">TELEGRAM</label>
-          <input type="text" class="form-input" v-model="telegram" />
+          <input type="text" class="form-input" v-model="form.telegram" />
         </div>
 
         <div class="grid gap-2">
           <label for="description">DESCRIPTION</label>
           <textarea
-            v-model="description"
+            v-model="form.description"
             name=""
             id="description"
             cols="100"
@@ -61,7 +69,7 @@ async function sendMsg() {
           ></textarea>
         </div>
         <button
-          :disabled="send === 0"
+          :disabled="send === 0 || loading === true"
           type="button"
           @click="sendMsg"
           class="py-2 bg-primary/10 border border-primary hover:bg-primary transition-all duration-500 rounded-full hover:text-black flex items-center justify-center disabled:text-gray-500 disabled:hover:bg-primary/10"
