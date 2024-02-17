@@ -26,7 +26,7 @@ import Project from "./shared/Project.vue";
         /></Project>
         <Project
           title="Mobile - Legacy Cinema Booking System"
-          demo="https://legacycinema.vercel.app"
+          demo="https://github.com/devitrithy/legacy_cinema_mobile_app"
           github="https://github.com/devitrithy/legacy_cinema_mobile_app"
           date="Jan 1, 2024 - Jan 13, 2024"
           ><img src="./project_3.png" alt="" srcset="" width="100%"

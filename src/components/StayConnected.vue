@@ -7,6 +7,7 @@ import { ref, type Ref } from "vue";
 let loading: Ref<boolean> = ref(false);
 let send: Ref<number> = ref(2);
 let name: Ref<String> = ref("");
+let telegram: Ref<String> = ref("");
 let email: Ref<String> = ref("");
 let description: Ref<string> = ref("");
 
@@ -42,6 +43,10 @@ async function sendMsg() {
         <div class="grid gap-2">
           <label for="email">EMAIL</label>
           <input type="email" class="form-input" v-model="email" />
+        </div>
+        <div class="grid gap-2">
+          <label for="telegram">TELEGRAM</label>
+          <input type="text" class="form-input" v-model="telegram" />
         </div>
 
         <div class="grid gap-2">
