@@ -41,8 +41,26 @@
       <div class="w-full md:w-1/3 mb-6 md:mb-0">
         <h3 class="text-lg font-semibold mb-4">Site Credits</h3>
         <ul>
-          <li>Icons by Icones.JS</li>
-          <li>Fonts by Google Fonts</li>
+          <li>
+            Icons by
+            <a href="https://icones.js.org" class="font-bold hover:underline"
+              >Icones</a
+            >
+          </li>
+          <li>
+            Illustration by
+            <a href="https://undraw.co" class="font-bold hover:underline"
+              >unDraw</a
+            >
+          </li>
+          <li>
+            Fonts by
+            <a
+              href="https://fonts.google.com/"
+              class="font-bold hover:underline"
+              >Google Fonts</a
+            >
+          </li>
         </ul>
       </div>
 
