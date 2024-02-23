@@ -13,8 +13,15 @@ const form = reactive({
   description: "",
 });
 
+function checkEmpty(txt: String) {
+  if (txt.length < 1) {
+    return false;
+  }
+  return true;
+}
 async function sendMsg() {
   loading.value = true;
+
   await axios
     .post("https://devit-message-server.vercel.app/api/message", {
       name: form.name,

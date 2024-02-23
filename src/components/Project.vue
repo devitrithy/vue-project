@@ -31,6 +31,17 @@ import Project from "./shared/Project.vue";
           date="Jan 1, 2024 - Jan 13, 2024"
           ><img src="./project_3.png" alt="" srcset="" width="100%"
         /></Project>
+        <Project
+          title="POS System - UI"
+          demo="https://devit-pos-system.vercel.app"
+          github="https://github.com/devitrithy/devit-pos-system"
+          date="Feb 20, 2024 - Feb 23, 2024"
+          ><img
+            src="https://i.imgur.com/veghq7z.png"
+            alt=""
+            srcset=""
+            width="100%"
+        /></Project>
       </div>
     </div>
   </main>
