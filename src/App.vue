@@ -2,6 +2,7 @@
 import Navbar from "./components/Navbar.vue";
 import Home from "./components/Home.vue";
 import AboutMe from "./components/AboutMe.vue";
+import Footers from "./components/Footer.vue";
 import Education from "./components/Education.vue";
 import Skill from "./components/Skill.vue";
 import Project from "./components/Project.vue";
@@ -80,5 +81,8 @@ function detectMobile() {
     <section id="stay_connected" class="pt-[80px] items-start">
       <StayConnected />
     </section>
+    <footer>
+      <Footers />
+    </footer>
   </div>
 </template>
