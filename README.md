@@ -1,7 +1,7 @@
 # POS System UI
 
-I code this project for 3 days using Vue.js tailwindcss and Element UI Plus
+My very first Portfolio design and coded by me using Vue.js Typescript Tailwindcss and AOS for animation.
 
 Here is the UX/UI design by me
 
-https://www.figma.com/file/tbijpv5QQ4qs9J2ltwoEwP/Untitled?type=design&node-id=128%3A242&mode=design&t=5czkUVXOvO7LT2xW-1
+https://www.figma.com/file/Cjs7aMsHjbiicQRQgjAxnj/Untitled?type=design&node-id=0%3A1&mode=design&t=dch2mreyaWB14XHN-1
