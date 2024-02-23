@@ -1,8 +1,9 @@
 <template>
-  <!-- / -->
-  <footer class="bg-background text-gray-300 py-8 border-t border-primary/10">
-    <div class="container mx-auto flex justify-between">
-      <div class="w-1/3">
+  <footer
+    class="bg-background text-gray-300 py-8 border-t border-primary/10 px-4"
+  >
+    <div class="container mx-auto flex flex-wrap justify-between">
+      <div class="w-full md:w-1/3 mb-6 md:mb-0">
         <h3 class="text-lg font-semibold mb-4">Contact</h3>
         <p>
           Email:
@@ -10,15 +11,15 @@
             >devitrithy1@gmail.com</a
           >
         </p>
-        <a href="tel:+855884124798"> Phone: +855 88 412 4798 </a>
+        <p><a href="tel:+855884124798">Phone: +855 88 412 4798</a></p>
       </div>
 
-      <div class="w-1/3">
+      <div class="w-full md:w-1/3 mb-6 md:mb-0">
         <h3 class="text-lg font-semibold mb-4">Follow Me</h3>
         <ul>
           <li>
             <a href="https://t.me/devitrithy" class="block mb-2 hover:underline"
-              >Twitter</a
+              >Telegram</a
             >
           </li>
           <li>
@@ -37,8 +38,15 @@
           </li>
         </ul>
       </div>
+      <div class="w-full md:w-1/3 mb-6 md:mb-0">
+        <h3 class="text-lg font-semibold mb-4">Site Credits</h3>
+        <ul>
+          <li>Icons by Icones.JS</li>
+          <li>Fonts by Google Fonts</li>
+        </ul>
+      </div>
 
-      <div class="w-1/3">
+      <div class="w-full md:w-1/3">
         <p class="text-lg font-semibold">
           &copy; 2024 Rithy Devit. All rights reserved.
         </p>
