@@ -1,24 +1,44 @@
 <script setup lang="ts">
 import axios from "axios";
+import Input from "@/components/shared/Input.vue";
 import Heading from "./shared/Heading.vue";
 import Loading from "./icons/Loading.vue";
 import StayConnected from "./shared/StayConnected.vue";
 import { reactive, ref, type Ref } from "vue";
+import { type Form, validated } from "@/type";
 let loading: Ref<boolean> = ref(false);
 let send: Ref<number> = ref(2);
-const form = reactive({
-  name: "",
-  telegram: "",
-  email: "",
-  description: "",
+const form: Form = reactive({
+  name: {
+    titles: "NAME",
+    value: "",
+    message: "",
+    validate: validated.start,
+  },
+  email: {
+    titles: "EMAIL",
+    value: "",
+    message: "",
+    validate: validated.start,
+  },
+  telegram: {
+    titles: "TELEGRAM",
+    value: "",
+    message: "",
+    validate: validated.start,
+  },
+  description: {
+    titles: "DESCRIPTION",
+    value: "",
+    message: "",
+    validate: validated.start,
+  },
 });
 
-function checkEmpty(txt: String) {
-  if (txt.length < 1) {
-    return false;
-  }
+function checkValidation(txt: string) {
   return true;
 }
+
 async function sendMsg() {
   loading.value = true;
 
@@ -46,28 +66,29 @@ async function sendMsg() {
         class="xl:w-[785px] xl:h-[572px] lg:w-[585px] lg:h-[372px] md:w-[485px] md:h-[272px] hidden lg:block"
       />
       <div class="grid gap-5">
-        <div class="grid gap-2">
-          <label for="subject">FULLNAME</label>
-          <input
-            type="text"
-            id="subject"
-            class="form-input"
-            v-model="form.name"
-          />
-        </div>
-        <div class="grid gap-2">
-          <label for="email">EMAIL</label>
-          <input type="email" class="form-input" v-model="form.email" />
-        </div>
-        <div class="grid gap-2">
-          <label for="telegram">TELEGRAM</label>
-          <input type="text" class="form-input" v-model="form.telegram" />
-        </div>
+        <Input
+          :titles="form.name.titles"
+          :value="form.name.value"
+          :validate="form.name.validate"
+          message="idk"
+        />
+        <Input
+          :titles="form.email.titles"
+          :value="form.email.value"
+          :validate="form.email.validate"
+          message="idk"
+        />
+        <Input
+          :titles="form.telegram.titles"
+          :value="form.telegram.value"
+          :validate="form.telegram.validate"
+          message="idk"
+        />
 
         <div class="grid gap-2">
-          <label for="description">DESCRIPTION</label>
+          <label for="description">{{ form.description.titles }}</label>
           <textarea
-            v-model="form.description"
+            v-model="form.description.value"
             name=""
             id="description"
             cols="100"

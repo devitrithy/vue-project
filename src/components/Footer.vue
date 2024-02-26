@@ -63,6 +63,11 @@
           </li>
         </ul>
       </div>
+      <div class="w-full md:w-1/3">
+        <p class="text-lg font-semibold">
+          Designed and Developed by Rithy Devit
+        </p>
+      </div>
 
       <div class="w-full md:w-1/3">
         <p class="text-lg font-semibold">

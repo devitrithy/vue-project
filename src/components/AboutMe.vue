@@ -36,6 +36,7 @@ import Hobbie from "./shared/Hobbie.vue";
         </p>
         <br />
         <Info title="fullname" text="Rithy Devit" animate-duration="700" />
+        <Info title="Date Of Birth" text="14 May 2000" animate-duration="700" />
         <Info title="phone" text="+855 88 412 4798" animate-duration="800" />
         <Info
           title="email"

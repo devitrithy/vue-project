@@ -17,6 +17,8 @@ export default {
       yellow: colors.yellow,
       'primary': '#54CAFA',
       'background': '#060606',
+      'danger': '#f21f43',
+      'success': '#1ff26d',
       'text': '#FFFFFF',
     },
   },
