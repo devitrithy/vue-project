@@ -66,25 +66,33 @@ async function sendMsg() {
         class="xl:w-[785px] xl:h-[572px] lg:w-[585px] lg:h-[372px] md:w-[485px] md:h-[272px] hidden lg:block"
       />
       <div class="grid gap-5">
-        <Input
-          :titles="form.name.titles"
-          :value="form.name.value"
-          :validate="form.name.validate"
-          message="idk"
-        />
-        <Input
-          :titles="form.email.titles"
-          :value="form.email.value"
-          :validate="form.email.validate"
-          message="idk"
-        />
-        <Input
-          :titles="form.telegram.titles"
-          :value="form.telegram.value"
-          :validate="form.telegram.validate"
-          message="idk"
-        />
-
+        <div class="grid gap-2">
+          <label for="subject">{{ form.name.titles }}</label>
+          <input
+            :value="form.name.value"
+            type="text"
+            id="subject"
+            class="form-input"
+          />
+        </div>
+        <div class="grid gap-2">
+          <label for="subject">{{ form.email.titles }}</label>
+          <input
+            :value="form.email.value"
+            type="text"
+            id="subject"
+            class="form-input"
+          />
+        </div>
+        <div class="grid gap-2">
+          <label for="subject">{{ form.telegram.titles }}</label>
+          <input
+            :value="form.telegram.value"
+            type="text"
+            id="subject"
+            class="form-input"
+          />
+        </div>
         <div class="grid gap-2">
           <label for="description">{{ form.description.titles }}</label>
           <textarea

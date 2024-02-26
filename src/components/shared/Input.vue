@@ -4,12 +4,15 @@ import { ref, type Ref } from "vue";
 
 const props: InputField = defineProps<InputField>();
 const validation = ref("border-primary");
+function onChange(txt: String) {
+  console.log(txt);
+}
 </script>
 <template>
   <div class="grid gap-2">
     <label for="subject">{{ titles }}</label>
     <input
-      :value="value"
+      @change="onChange(value)"
       type="text"
       id="subject"
       class="form-input"
