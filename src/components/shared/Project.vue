@@ -14,9 +14,7 @@ defineProps({
   <div
     class="rounded-lg overflow-hidden transition-all border border-primary/50 bg-primary/10 shadow-lg hover:shadow-primary/10 flex flex-col justify-between"
   >
-    <div class="h-48">
-      <slot></slot>
-    </div>
+    <slot></slot>
     <div class="px-4 py-2">
       <h1 class="text-lg text-nowrap font-semibold py-1 text-ellipsis truncate">
         {{ title }}
