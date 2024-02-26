@@ -44,10 +44,10 @@ async function sendMsg() {
 
   await axios
     .post("https://devit-message-server.vercel.app/api/message", {
-      name: form.name,
-      telegram: form.telegram,
-      email: form.email,
-      description: form.description,
+      name: form.name.value,
+      telegram: form.telegram.value,
+      email: form.email.value,
+      description: form.description.value,
     })
     .then(() => {
       loading.value = false;
