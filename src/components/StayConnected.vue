@@ -69,7 +69,7 @@ async function sendMsg() {
         <div class="grid gap-2">
           <label for="subject">{{ form.name.titles }}</label>
           <input
-            :value="form.name.value"
+            v-model="form.name.value"
             type="text"
             id="subject"
             class="form-input"
@@ -78,7 +78,7 @@ async function sendMsg() {
         <div class="grid gap-2">
           <label for="subject">{{ form.email.titles }}</label>
           <input
-            :value="form.email.value"
+            v-model="form.email.value"
             type="text"
             id="subject"
             class="form-input"
@@ -87,7 +87,7 @@ async function sendMsg() {
         <div class="grid gap-2">
           <label for="subject">{{ form.telegram.titles }}</label>
           <input
-            :value="form.telegram.value"
+            v-model="form.telegram.value"
             type="text"
             id="subject"
             class="form-input"
