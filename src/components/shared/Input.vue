@@ -9,6 +9,7 @@ const validation = ref("border-primary");
   <div class="grid gap-2">
     <label for="subject">{{ titles }}</label>
     <input
+      :value="value"
       type="text"
       id="subject"
       class="form-input"
